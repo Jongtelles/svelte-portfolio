@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Quote from '$lib/Quote.svelte';
+	import About from '$lib/About.svelte';
 </script>
 
 <svelte:head>
@@ -7,33 +8,88 @@
 </svelte:head>
 
 <main>
-	<h1>Hello world!</h1>
-
 	<Quote />
-
-	<p>Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
+	<About />
 </main>
 
 <style lang="scss">
+	:global {
+		*,
+		*::after,
+		*::before {
+			box-sizing: border-box;
+		}
+
+		html {
+			height: 100%;
+			font-size: 10px;
+			line-height: 1.5;
+			box-sizing: border-box;
+			-webkit-text-size-adjust: 100%;
+		}
+
+		body {
+			margin: 0;
+			font-size: 1.6rem;
+			color: whitesmoke;
+			text-align: center;
+			height: 100%;
+			background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+
+		h2 {
+			margin: 0;
+		}
+
+		ul {
+			padding: 0;
+			list-style: none;
+		}
+
+		/* utility */
+		.flex-container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.flex-container.vertical {
+			flex-direction: column;
+		}
+
+		.flex-evenly {
+			justify-content: space-evenly;
+		}
+
+		.flex-justify-center {
+			justify-content: center;
+		}
+
+		.margin-tb-1 {
+			margin: 1rem 0;
+		}
+
+		/* #svelte {
+			text-align: center;
+			height: 100%;
+			background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
+			background-size: cover;
+			background-repeat: no-repeat;
+		} */
+	}
+
 	:root {
-		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
-			'Open Sans', 'Helvetica Neue', sans-serif;
+		font-family: 'Noto Sans JP', sans-serif;
 	}
 
 	main {
-		text-align: center;
+		/* text-align: center;
 		height: 100%;
 		background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
 		background-size: cover;
-		background-repeat: no-repeat;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
+		background-repeat: no-repeat; */
 	}
 
 	h1 {
@@ -43,21 +99,5 @@
 		line-height: 1.1;
 		margin: 4rem auto;
 		max-width: 14rem;
-	}
-
-	p {
-		max-width: 14rem;
-		margin: 2rem auto;
-		line-height: 1.35;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			max-width: none;
-		}
-
-		p {
-			max-width: none;
-		}
 	}
 </style>
