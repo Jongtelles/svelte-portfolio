@@ -1,7 +1,7 @@
 <script>
   let image = "./assets/headshot2.0.png";
-  let staticImg = "./assets/headshot2.0.png";
-  let gif = "./assets/headshot-8bit.gif";
+  const staticImg = "./assets/headshot2.0.png";
+  const gif = "./assets/headshot-8bit.gif";
 </script>
 
 <div class="about">

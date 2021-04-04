@@ -1,5 +1,6 @@
 <script lang="ts">
   const time = new Date().getFullYear();
+  const image = "./assets/GitHub-Mark-Light-32px.png)";
 </script>
 
 <header class="header">
@@ -56,7 +57,11 @@
     <i class="far fa-copyright" /> Jon Telles {time}
   </p>
   <p class="footer--blurb">🙃 Made by a human being 🙃</p>
-  <a class="gh--link" href="https://github.com/Jongtelles/jongtelles.github.io">
+  <a
+    class="gh--link"
+    href="https://github.com/Jongtelles/jongtelles.github.io"
+    style="background-image: url({image});"
+  >
     <span>Github Link</span>
   </a>
 </footer>
@@ -127,7 +132,6 @@
   .gh--link {
     height: 2.5rem;
     width: 2.5rem;
-    background-image: url(./assets/GitHub-Mark-Light-32px.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
