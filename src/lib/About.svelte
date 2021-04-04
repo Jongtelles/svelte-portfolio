@@ -1,7 +1,27 @@
+<script>
+  let image = "./assets/headshot2.0.png";
+  let staticImg = "./assets/headshot2.0.png";
+  let gif = "./assets/headshot-8bit.gif";
+</script>
+
 <div class="about">
   <h2>About Me</h2>
   <div class="flex-container flex-evenly">
-    <div class="about--img" alt="headshot of a very cool and handsome smiling man (it's me)" />
+    <div
+      class="about--img"
+      alt="headshot of a very cool and handsome smiling man (it's me)"
+      style="background-image: url({image});"
+      on:mouseenter={() => {
+        if (image === staticImg) {
+          image = gif;
+        }
+      }}
+      on:mouseleave={() => {
+        if (image === gif) {
+          image = staticImg;
+        }
+      }}
+    />
     <div class="about--list-container">
       <ul class="about--list">
         <li>
@@ -62,16 +82,11 @@
   .about--img {
     margin: 0.5rem;
     border-radius: 1rem;
-    background-image: url("./assets/headshot2.0.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
     width: 20rem;
-    transition: background-image 0.5s ease-in-out;
-  }
-
-  .about--img:hover {
-    background-image: url("./assets/headshot-8bit.gif");
+    transition: all 0.5s ease-in-out;
   }
 
   .about--list-container {
@@ -97,10 +112,6 @@
   @media (max-width: 500px) {
     .about {
       margin: 2rem;
-    }
-
-    .about--img:hover {
-      background-image: url(./assets/headshot-8bit.jpg);
     }
 
     .about--list-container {

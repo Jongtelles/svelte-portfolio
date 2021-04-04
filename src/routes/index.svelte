@@ -37,6 +37,7 @@
 </script>
 
 <svelte:head>
+  <meta name="description" content="Jon Telles - Software Engineer - Portfolio" />
   <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://jontell.es/" />
   <meta property="og:type" content="website" />
