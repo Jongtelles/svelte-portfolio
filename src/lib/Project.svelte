@@ -85,7 +85,7 @@
   .project--desc {
     padding: 0.5rem;
     border-radius: 1rem;
-    background: rgba(1, 1, 1, 25%);
+    background-color: rgba(0, 0, 0, 25%);
     font-size: 1.4rem;
   }
 
