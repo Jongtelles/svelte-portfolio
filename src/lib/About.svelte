@@ -1,7 +1,5 @@
 <script>
   let image = "./assets/headshot2.0.png";
-  const staticImg = "./assets/headshot2.0.png";
-  const gif = "./assets/headshot-8bit.gif";
 </script>
 
 <div class="about">
@@ -11,16 +9,6 @@
       class="about--img"
       alt="headshot of a very cool and handsome smiling man (it's me)"
       style="background-image: url({image});"
-      on:mouseenter={() => {
-        if (image === staticImg) {
-          image = gif;
-        }
-      }}
-      on:mouseleave={() => {
-        if (image === gif) {
-          image = staticImg;
-        }
-      }}
     />
     <div class="about--list-container">
       <ul class="about--list">

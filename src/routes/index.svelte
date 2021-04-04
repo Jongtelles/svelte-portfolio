@@ -46,7 +46,7 @@
     property="og:description"
     content="Strong communicator with a knack for mobilizing teams and translating technical concepts into plain English (or terrible Spanish)."
   />
-  <meta property="og:image" content="%PUBLIC_URL%/aboutme.png" />
+  <meta property="og:image" content="/aboutme.png" />
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image" />
@@ -57,13 +57,14 @@
     name="twitter:description"
     content="Strong communicator with a knack for mobilizing teams and translating technical concepts into plain English (or terrible Spanish)."
   />
-  <meta name="twitter:image" content="%PUBLIC_URL%/aboutme.png" />
+  <meta name="twitter:image" content="/aboutme.png" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
     rel="stylesheet"
   />
   <script src="https://kit.fontawesome.com/cffb40c34b.js" crossorigin="anonymous"></script>
+  <link rel="manifest" href="/manifest.json" />
   <title>Jon Telles: Software Engineer 💻</title>
 </svelte:head>
 
