@@ -24,7 +24,7 @@
 
 <span class="quote-container">
   {#if quotes.length}
-    <q class="quote" title={quote.cite} cite={quote.cite}>
+    <q class="quote" title={quote.cite} cite={quote.cite} style="background-color: rgba(0, 0, 0, 20%);">
       {quote.words}
     </q>
     <button
@@ -65,7 +65,6 @@
   }
 
   .quote {
-    background: rgba(0, 0, 0, 15%);
     border-radius: 1rem;
     font-size: 1.2rem;
     padding: 0.5rem;
