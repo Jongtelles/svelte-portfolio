@@ -3,6 +3,7 @@
   import Quote from "$lib/Quote.svelte";
   import About from "$lib/About.svelte";
   import Highlight from "$lib/Highlight.svelte";
+  import Project from "$lib/Project.svelte";
 
   onMount(() => {
     console.log(
@@ -61,8 +62,13 @@
 <main>
   <Quote />
   <About />
+  <h2 class="page--header">Professional Work: Front End</h2>
   <div class="flex-container flex-justify-center margin-tb-1">
     <Highlight />
+  </div>
+  <h2 class="page--header">Personal Projects</h2>
+  <div class="flex-container flex-justify-center margin-tb-1">
+    <Project />
   </div>
 </main>
 
