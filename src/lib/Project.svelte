@@ -47,7 +47,7 @@
   </p>
 </article>
 
-<style scoped>
+<style>
   .project {
     flex-basis: 45%;
     background: linear-gradient(20deg, #64cff7, #8f8cf2, #ca7cd8, #ff68a8);
@@ -87,5 +87,11 @@
     border-radius: 1rem;
     background: rgba(0, 0, 0, 25%);
     font-size: 1.4rem;
+  }
+
+  @media (max-width: 500px) {
+    .project {
+      flex-basis: 100%;
+    }
   }
 </style>

@@ -1,6 +1,3 @@
-<script lang="ts">
-</script>
-
 <article class="highlight">
   <h2 class="highlight--header">
     <a target="_blank" rel="noopener noreferrer" href="https://nitaac.nih.gov">NITAAC</a>
@@ -14,10 +11,10 @@
     />
   </div>
   <p class="highlight--desc">
-    Currently, I'm the lead front end developer for a refresh of the NIH Information Technology
-    Acquisition and Assessment Center's public-facing website. My primary contributions include
-    updating and creating markup, styles, animations, and interactions for all components across
-    most-visited pages. I am also co-leading a Drupal migration, which involves refactoring
+    Most recently, I was the lead front end developer for a refresh of the NIH Information
+    Technology Acquisition and Assessment Center's public-facing website. My primary contributions
+    include updating and creating markup, styles, animations, and interactions for all components
+    across most-visited pages. I am also co-leading a Drupal migration, which involves refactoring
     site-wide legacy code to meet modern web standards and streamlining CMS practices.
   </p>
 </article>
@@ -82,7 +79,7 @@
   </a>
 </article>
 
-<style scoped>
+<style>
   .highlight {
     background: linear-gradient(145deg, #18363e, #2d5f6e, #2e4770, #ce5e82, #f08d7e);
     padding: 1rem;
@@ -138,5 +135,29 @@
   .highlight--award:hover,
   .highlight--desc a:hover {
     color: #2e2157;
+  }
+
+  @media (max-width: 500px) {
+    .highlight--img-container {
+      flex-direction: column;
+    }
+
+    .highlight--img-container img {
+      max-width: 27rem;
+      max-height: 45rem;
+    }
+
+    .highlight--img-container img:hover {
+      transform: unset;
+      margin: 1rem;
+    }
+
+    .highlight--desc {
+      font-size: 1.4rem;
+    }
+
+    .highlight--award {
+      font-size: 1.2rem;
+    }
   }
 </style>

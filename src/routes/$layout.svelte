@@ -61,7 +61,7 @@
   </a>
 </footer>
 
-<style lang="scss">
+<style>
   .header {
     display: flex;
     align-items: center;
@@ -140,5 +140,15 @@
     width: 1px;
     height: 1px;
     overflow: hidden;
+  }
+
+  @media (max-width: 500px) {
+    .header {
+      flex-direction: column;
+    }
+
+    .header--links {
+      margin: 0.5rem 0;
+    }
   }
 </style>

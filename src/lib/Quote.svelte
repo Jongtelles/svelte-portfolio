@@ -12,7 +12,6 @@
   };
 
   onMount(() => {
-	  console.log("this is just a log to make sure the onmount is only happening once...")
     setTimeout(() => {
       quoteBtnPeek = true;
     }, 500);
@@ -55,7 +54,7 @@
   {/if}
 </span>
 
-<style lang="scss">
+<style>
   .quote-container {
     position: relative;
     display: flex;
@@ -63,73 +62,78 @@
     align-items: center;
     max-width: 50%;
     margin: 0 auto;
+  }
 
-    .quote {
-      background: rgba(0, 0, 0, 15%);
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
+  .quote {
+    background: rgba(0, 0, 0, 15%);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
 
-      a {
-        color: #eca089;
-        text-decoration: none;
+  .quote:hover + .quote--button {
+    opacity: 1;
+    visibility: visible;
+  }
 
-        &:hover {
-          text-decoration: underline;
-        }
-      }
+  .quote a {
+    color: #eca089;
+    text-decoration: none;
+  }
 
-      &:hover {
-        + .quote--button {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
+  .quote a:hover {
+    text-decoration: underline;
+  }
 
-    .quote--button {
-      opacity: 0;
-      visibility: hidden;
-      position: absolute;
-      top: -22px;
-      padding: 0.5rem;
-      border: 0;
-      outline: 0;
-      background: linear-gradient(45deg, #200d3a, #292651, #2e4770, #ce5e82, #eca089, #ecc6a2);
-      color: whitesmoke;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: lowercase;
-      width: 8rem;
-      border-radius: 1rem;
-      margin-top: 0.5rem;
-      cursor: pointer;
-      transition: all 0.5s ease-in-out;
+  .quote--button {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -22px;
+    padding: 0.5rem;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(45deg, #200d3a, #292651, #2e4770, #ce5e82, #eca089, #ecc6a2);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    width: 8rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+  }
 
-      &:hover {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
+  .quote--button:hover {
+    opacity: 1;
+    visibility: visible;
+  }
 
-    .quote--button-reset {
-      padding: 0.5rem;
-      border: 0;
-      outline: 0;
-      background: linear-gradient(45deg, #200d3a, #292651, #2e4770, #ce5e82, #eca089, #ecc6a2);
-      color: whitesmoke;
-      font-size: 1.2rem;
-      font-weight: bold;
-      text-transform: lowercase;
-      width: 8rem;
-      border-radius: 1rem;
-      cursor: pointer;
-    }
+  .quote--button-reset {
+    padding: 0.5rem;
+    border: 0;
+    outline: 0;
+    background: linear-gradient(45deg, #200d3a, #292651, #2e4770, #ce5e82, #eca089, #ecc6a2);
+    color: whitesmoke;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: lowercase;
+    width: 8rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
 
-    .quote-btn-peek {
-      opacity: 1;
-      visibility: visible;
+  .quote-btn-peek {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  @media (max-width: 500px) {
+    .quote-container {
+      margin: 0.5rem auto;
+      max-width: 100%;
     }
   }
 </style>

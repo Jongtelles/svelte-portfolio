@@ -26,6 +26,13 @@
       "%c and good at my job!",
       "font-weight: bold; font-size: 40px;color: rgb(32,13,58); text-shadow: 3px 3px 0 rgb(166,33,106) , 6px 6px 0 rgb(236,28,75) , 9px 9px 0 rgb(241,106,67) , 12px 12px 0 rgb(247,217,105) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(47,147,149)"
     );
+
+    setTimeout(() => {
+      const icons = [...document.querySelectorAll("i")];
+      icons.map((icon) => {
+        return icon.classList.add("spin-cw");
+      });
+    }, 2000);
   });
 </script>
 
@@ -131,18 +138,36 @@
     .margin-tb-1 {
       margin: 1rem 0;
     }
+
+    @keyframes icon-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .spin-cw {
+      animation-name: icon-spin;
+      animation-duration: 1s;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .spin-cw:hover {
+      animation-name: icon-spin;
+      animation-duration: 1.25s;
+      animation-iteration-count: infinite;
+    }
   }
 
   :root {
     font-family: "Noto Sans JP", sans-serif;
   }
 
-  /* h1 {
-		text-transform: uppercase;
-		font-size: 4rem;
-		font-weight: 100;
-		line-height: 1.1;
-		margin: 4rem auto;
-		max-width: 14rem;
-	} */
+  @media (max-width: 500px) {
+    .page--header {
+      font-size: 2.4rem;
+    }
+  }
 </style>
