@@ -1,7 +1,3 @@
-<script lang="ts">
-// const headshot = 'assets/headshot2.0.png'
-</script>
-
 <div class="about">
 	<h2>About Me</h2>
 	<div class="flex-container flex-evenly">
@@ -33,12 +29,12 @@
 		</div>
 	</div>
 	<p class="about--tech-skills">
-		<strong>Stack 🥞:</strong> React (Hooks) | Vue | Node | JavaScript (ES2015+) | SCSS/SASS | CSS3
+		<strong>Stack 🥞:</strong> React (Hooks) | Vue | TypeScript | Node | JavaScript (ES2015+) | SCSS/SASS | CSS3
 		(animations) | HTML5 | jQuery
 		<br />
 		<strong>Data 💾:</strong> JSON | GraphQL | MySQL | MongoDB | REST | APIs
 		<br />
-		<strong>Misc 🔀:</strong> Git | Testing (Jest/Enzyme) | Design Systems | Agile | JIRA | InVision
+		<strong>Misc 🔀:</strong> Git | Testing (Cyprus) | Design Systems | Agile | JIRA | InVision
 		| BEM | 508 compliance | NPM | Babel | Docker | Gulp
 		<br />
 		<strong>Looking Into 👀:</strong> Svelte | Deno | Dgraph | Kubernetes | FaunaDB | Gatsby | WASM |
