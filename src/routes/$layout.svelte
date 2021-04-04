@@ -59,7 +59,7 @@
   <p class="footer--blurb">🙃 Made by a human being 🙃</p>
   <a
     class="gh--link"
-    href="https://github.com/Jongtelles/jongtelles.github.io"
+    href="https://github.com/Jongtelles/svelte-portfolio"
     style="background-image: url({image});"
   >
     <span>Github Link</span>
