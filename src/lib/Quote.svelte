@@ -24,7 +24,12 @@
 
 <span class="quote-container">
   {#if quotes.length}
-    <q class="quote" title={quote.cite} cite={quote.cite} style="background-color: rgba(0, 0, 0, 20%);">
+    <q
+      class="quote"
+      title={quote.cite}
+      cite={quote.cite}
+      style="background-color: rgba(0, 0, 0, 20%);"
+    >
       {quote.words}
     </q>
     <button
@@ -38,6 +43,7 @@
       class="quote"
       title="Jon Telles, Extremely Good & Professional Developer"
       cite="Jon Telles, Extremely Good & Professional Developer"
+      style="background-color: rgba(0, 0, 0, 20%);"
     >
       We're out of quotes 😔...feel free to
       <a href="mailto:jongtelles@gmail.com">email me more!</a> or{" "}
