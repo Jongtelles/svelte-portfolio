@@ -92,7 +92,6 @@
       font-size: 10px;
       line-height: 1.5;
       box-sizing: border-box;
-      -webkit-text-size-adjust: 100%;
     }
 
     body {

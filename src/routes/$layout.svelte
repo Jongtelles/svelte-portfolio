@@ -1,6 +1,6 @@
 <script lang="ts">
   const time = new Date().getFullYear();
-  const image = "./assets/GitHub-Mark-Light-32px.png)";
+  const image = "./assets/github-logo.png";
 </script>
 
 <header class="header">
@@ -130,8 +130,8 @@
   }
 
   .gh--link {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 3.2rem;
+    width: 3.2rem;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
