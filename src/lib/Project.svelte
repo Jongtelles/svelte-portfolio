@@ -19,7 +19,7 @@
     alt="game of life vizualizer website screenshot"
     src="./assets/gomeoflife.png"
   />
-  <p class="project--desc">
+  <p class="project--desc" style="background-color: rgba(0, 0, 0, 25%);">
     React app that generates a board and randomly creates starting organisms before playing out
     iterations of the Game of Life
   </p>
@@ -41,9 +41,9 @@
     class="project--link">Github Repo</a
   >
   <img class="project--img" alt="dogs r good 4 u website screenshot" src="./assets/dogsrguud.png" />
-  <p class="project--desc">
+  <p class="project--desc" style="background-color: rgba(0, 0, 0, 25%);">
     React app that utilizes Hooks to fetch dogs at random (continuously or one at a time) and makes
-    them do tricks (CSS animations)' name='Dogs R Good 4 U
+    them do tricks (CSS animations)'
   </p>
 </article>
 
@@ -85,7 +85,7 @@
   .project--desc {
     padding: 0.5rem;
     border-radius: 1rem;
-    background-color: rgba(0, 0, 0, 25%);
+    /* background-color: rgba(0, 0, 0, 25%); */
     font-size: 1.4rem;
   }
 
