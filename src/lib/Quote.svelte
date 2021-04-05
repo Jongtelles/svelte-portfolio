@@ -4,10 +4,15 @@
 
   let quoteBtnPeek = false;
   let quotes = [...words];
-  let quote = quotes[Math.floor(Math.random() * quotes.length)];
+  let quote = words[Math.floor(Math.random() * quotes.length)];
 
   const getQuote = () => {
     quotes = quotes.filter((item) => item !== quote);
+    quote = quotes[Math.floor(Math.random() * quotes.length)];
+  };
+
+  const resetQuotes = () => {
+    quotes = [...words];
     quote = quotes[Math.floor(Math.random() * quotes.length)];
   };
 
@@ -46,16 +51,8 @@
       style="background-color: rgba(0, 0, 0, 20%);"
     >
       We're out of quotes 😔...feel free to
-      <a href="mailto:jongtelles@gmail.com">email me more!</a> or{" "}
-      <button
-        class="quote--button-reset"
-        on:click={() => {
-          quotes = [...words];
-          quote = quotes[Math.floor(Math.random() * quotes.length)];
-        }}
-      >
-        start over
-      </button>
+      <a href="mailto:jongtelles@gmail.com">email me more!</a> or
+      <button class="quote--button-reset" on:click={resetQuotes}> start over </button>
     </q>
   {/if}
 </span>
