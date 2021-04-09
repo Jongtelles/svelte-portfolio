@@ -147,11 +147,12 @@
   }
 
   .svelte-callout span {
+    margin: 5px 0 0 5px;
     font-weight: bold;
     text-transform: uppercase;
     font-style: italic;
     text-shadow: 5px 5px 0px #eb452b, 8px 8px 0px #efa032, 11px 11px 0px #46b59b,
-      14px 14px 0px #017e7f, 17px 17px 0px #052939, 21px 21px 0px #c11a2b;
+      14px 14px 0px #017e7f, 17px 17px 0px #052939;
   }
 
   @keyframes slidebg {
