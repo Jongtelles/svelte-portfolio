@@ -6,7 +6,13 @@
       src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936403/headshot2.0_vvanbm.png"
       loading="lazy"
     />
-    <a href="https://svelte.dev/" class="svelte-callout" target="_blank" rel="noopener noreferrer">
+    <a
+      href="https://svelte.dev/"
+      class="svelte-callout"
+      target="_blank"
+      rel="noopener noreferrer"
+      style="background-color: rgba(0, 0, 0, 60%);"
+    >
       <span>Now with:</span>
       <svg
         id="svelteLogoSVG"
@@ -125,7 +131,6 @@
     top: 0;
     left: -17px;
     transform: rotate(-25deg);
-    background-color: rgba(0, 0, 0, 60%);
     border-radius: 12px;
     height: 50px;
     width: 220px;
@@ -150,7 +155,7 @@
 
   @keyframes slidebg {
     to {
-      background-position: 20vw;
+      background-position: 30vw;
     }
   }
 
