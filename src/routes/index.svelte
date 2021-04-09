@@ -64,6 +64,7 @@
     rel="stylesheet"
   />
   <script src="https://kit.fontawesome.com/cffb40c34b.js" crossorigin="anonymous"></script>
+  <script async defer data-domain="jontell.es" src="https://plausible.io/js/plausible.js"></script>
   <link rel="manifest" href="/manifest.json" />
   <title>Jon Telles: Software Engineer 💻</title>
 </svelte:head>
