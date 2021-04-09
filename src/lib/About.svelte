@@ -124,6 +124,7 @@
   }
 
   .svelte-callout {
+    color: whitesmoke;
     text-decoration: none;
     display: flex;
     justify-content: space-between;
