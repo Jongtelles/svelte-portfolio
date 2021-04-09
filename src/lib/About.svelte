@@ -174,8 +174,8 @@
     transform: scale(0.5);
     content: "";
     position: absolute;
-    left: 0;
-    top: -115px;
+    left: -121px;
+    top: -240px;
     height: 315px;
     width: 270px;
     display: block;

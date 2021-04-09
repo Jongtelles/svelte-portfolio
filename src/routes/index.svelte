@@ -112,9 +112,16 @@
     }
 
     #svelte {
-      background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
+      background: linear-gradient(-45deg, #2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
       background-size: cover;
       background-repeat: no-repeat;
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+
+      @media (max-width: 500px) {
+        background-size: 100% 100%;
+        animation: none;
+      }
     }
 
     /* utility */
@@ -149,16 +156,22 @@
       }
     }
 
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     .spin-cw {
       animation-name: icon-spin;
       animation-duration: 1s;
       transition: transform 0.5s ease-in-out;
-    }
-
-    .spin-cw:hover {
-      animation-name: icon-spin;
-      animation-duration: 1.25s;
-      animation-iteration-count: infinite;
     }
   }
 

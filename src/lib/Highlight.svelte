@@ -100,8 +100,8 @@
 <style>
   .highlight {
     background: linear-gradient(145deg, #18363e, #2d5f6e, #2e4770, #ce5e82, #f08d7e);
-    padding: 1rem;
-    margin: 2rem;
+    padding: 10px;
+    margin: 20px;
     border-radius: 1rem;
     box-shadow: -10px 10px 10px #540d6e;
     transition: box-shadow 0.5s ease-in-out;
