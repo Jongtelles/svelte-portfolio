@@ -203,6 +203,7 @@
     }
 
     .svelte-callout {
+      width: 75%;
       margin-top: 10px;
       position: relative;
       left: unset;
@@ -210,6 +211,11 @@
       transform: unset;
       background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
       animation: slidebgmobile 5s linear infinite;
+    }
+
+    .jq::after {
+      left: -137px;
+      top: -264px;
     }
   }
 </style>
