@@ -138,7 +138,7 @@
 
   .svelte-callout:hover {
     background-image: linear-gradient(90deg, #00c0ff 0%, #ffcf00 49%, #fc4f4f 80%, #00c0ff 100%);
-    animation: slidebg 3s linear infinite;
+    animation: slidebg 3.5s linear infinite;
   }
 
   .svelte-callout:visited {
@@ -155,7 +155,7 @@
 
   @keyframes slidebg {
     to {
-      background-position: 30vw;
+      background-position: 40vw;
     }
   }
 
