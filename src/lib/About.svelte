@@ -155,7 +155,7 @@
 
   @keyframes slidebg {
     to {
-      background-position: 40vw;
+      background-position: 34vw;
     }
   }
 
