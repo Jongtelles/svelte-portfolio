@@ -99,7 +99,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 24rem;
-    width: 20rem;
+    width: auto;
     transition: all 0.5s ease-in-out;
   }
 
