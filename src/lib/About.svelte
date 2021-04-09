@@ -64,8 +64,8 @@
     </div>
   </div>
   <p class="about--tech-skills">
-    <strong>Stack 🥞:</strong> Svelte | Vue | React | TypeScript | Node | JavaScript
-    (ES2015+) | SCSS | CSS | HTML | jQuery
+    <strong>Stack 🥞:</strong> Svelte | Vue | React | TypeScript | Node | JavaScript (ES2015+) |
+    SCSS | CSS | HTML | <span class="jq">jQuery</span>
     <br />
     <strong>Data 💾:</strong> JSON | GraphQL | MySQL | MongoDB | REST | APIs
     <br />
@@ -164,6 +164,25 @@
     to {
       background-position: 59vw;
     }
+  }
+
+  .jq {
+    position: relative;
+  }
+
+  .jq::after {
+    transform: scale(0.5);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -115px;
+    height: 315px;
+    width: 270px;
+    display: block;
+  }
+
+  .jq:hover::after {
+    background: url(https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617946626/giphy_ntucn5.webp);
   }
 
   @media (max-width: 500px) {
