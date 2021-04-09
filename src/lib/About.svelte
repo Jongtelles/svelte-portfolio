@@ -64,13 +64,13 @@
     </div>
   </div>
   <p class="about--tech-skills">
-    <strong>Stack 🥞:</strong> Svelte | Vue | React (Hooks) | TypeScript | Node | JavaScript
-    (ES2015+) | SCSS/SASS | CSS3 (animations) | HTML5 | jQuery
+    <strong>Stack 🥞:</strong> Svelte | Vue | React | TypeScript | Node | JavaScript
+    (ES2015+) | SCSS | CSS | HTML | jQuery
     <br />
     <strong>Data 💾:</strong> JSON | GraphQL | MySQL | MongoDB | REST | APIs
     <br />
     <strong>Misc 🔀:</strong> Git | Testing (Cyprus) | Design Systems | Agile | JIRA | InVision |
-    BEM | 508 compliance | NPM | Babel | Docker | Gulp
+    BEM | 508 compliance
     <br />
     <strong>Looking Into 👀:</strong> Deno | Dgraph | FaunaDB | WASM | Rust
   </p>
