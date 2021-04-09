@@ -134,8 +134,13 @@
 
   @media (max-width: 500px) {
     .quote-container {
-      margin: 0.5rem auto;
-      max-width: 100%;
+      margin: 20px auto;
+      max-width: 95%;
+    }
+
+    .quote--button {
+      opacity: 1;
+      visibility: visible;
     }
   }
 </style>

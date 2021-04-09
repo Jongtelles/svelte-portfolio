@@ -17,7 +17,8 @@
   <img
     class="project--img"
     alt="game of life vizualizer website screenshot"
-    src="./assets/gomeoflife.png"
+    src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936399/gomeoflife_nwbvnl.png"
+    loading="lazy"
   />
   <p class="project--desc" style="background-color: rgba(0, 0, 0, 25%);">
     React app that generates a board and randomly creates starting organisms before playing out
@@ -40,7 +41,12 @@
     rel="noreferrer noopener"
     class="project--link">Github Repo</a
   >
-  <img class="project--img" alt="dogs r good 4 u website screenshot" src="./assets/dogsrguud.png" />
+  <img
+    class="project--img"
+    alt="dogs r good 4 u website screenshot"
+    src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936405/dogsrguud_g8eyxm.png"
+    loading="lazy"
+  />
   <p class="project--desc" style="background-color: rgba(0, 0, 0, 25%);">
     React app that utilizes Hooks to fetch dogs at random (continuously or one at a time) and makes
     them do tricks (CSS animations)'

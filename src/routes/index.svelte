@@ -71,7 +71,7 @@
 <main>
   <Quote />
   <About />
-  <h2 class="page--header">Professional Work: Front End</h2>
+  <h2 class="page--header">Professional Work</h2>
   <div class="flex-container flex-justify-center margin-tb-1">
     <Highlight />
   </div>

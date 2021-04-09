@@ -3,11 +3,17 @@
     <a target="_blank" rel="noopener noreferrer" href="https://nitaac.nih.gov">NITAAC</a>
   </h2>
   <div class="highlight--img-container">
-    <img class="highlight--img" alt="nitaac.nih.gov front page" src="./assets/nitaac-fp.png" />
+    <img
+      class="highlight--img"
+      alt="nitaac.nih.gov front page"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936405/nitaac-fp_plyrdu.png"
+      loading="lazy"
+    />
     <img
       class="highlight--img"
       alt="nitaac.nih.gov task order page"
-      src="./assets/nitaac-task-order.png"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936401/nitaac-task-order_erhhuw.png"
+      loading="lazy"
     />
   </div>
   <p class="highlight--desc">
@@ -23,11 +29,17 @@
     <a target="_blank" rel="noopener noreferrer" href="https://www.aafmaa.com">AAFMAA</a>
   </h2>
   <div class="highlight--img-container">
-    <img class="highlight--img" alt="aafmaa.com front page" src="./assets/aafmaa-fp.png" />
+    <img
+      class="highlight--img"
+      alt="aafmaa.com front page"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936406/aafmaa-fp_b8wmui.png"
+      loading="lazy"
+    />
     <img
       class="highlight--img"
       alt="aafmaa.com life insurance calculator"
-      src="./assets/aafmaa-life.png"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936404/aafmaa-life_hexfg3.png"
+      loading="lazy"
     />
   </div>
   <p class="highlight--desc">
@@ -50,11 +62,17 @@
     <a target="_blank" rel="noopener noreferrer" href="https://farmers.gov">Farmers.gov</a>
   </h2>
   <div class="highlight--img-container">
-    <img class="highlight--img" alt="farmers.gov front page" src="./assets/farmers-gov-fp.png" />
+    <img
+      class="highlight--img"
+      alt="farmers.gov front page"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936404/farmers-gov-fp_hrdl4o.png"
+      loading="lazy"
+    />
     <img
       class="highlight--img"
       alt="farmers.gov disaster assistance discovery tool"
-      src="./assets/farmers-gov-dadt.png"
+      src="https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936401/farmers-gov-dadt_ysjdsv.png"
+      loading="lazy"
     />
   </div>
   <p class="highlight--desc">
