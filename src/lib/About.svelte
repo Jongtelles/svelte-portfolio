@@ -1,5 +1,5 @@
 <div class="about">
-  <div class="flex-container flex-evenly" style="position: relative;">
+  <div class="flex-container" style="position: relative;">
     <img
       class="about--img"
       alt="headshot of a very cool and handsome smiling man (it's me)"
@@ -121,6 +121,10 @@
 
   .about--tech-skills {
     color: #2e2157;
+  }
+
+  .about div {
+    justify-content: space-evenly;
   }
 
   .svelte-callout {

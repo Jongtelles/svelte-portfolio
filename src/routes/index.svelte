@@ -37,35 +37,6 @@
 </script>
 
 <svelte:head>
-  <meta name="description" content="Jon Telles - Software Engineer - Portfolio" />
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://jontell.es/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Jon Telles - Software Engineer - Portfolio" />
-  <meta
-    property="og:description"
-    content="Strong communicator with a knack for mobilizing teams and translating technical concepts into plain English (or terrible Spanish)."
-  />
-  <meta property="og:image" content="/aboutme.png" />
-
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta property="twitter:domain" content="jontell.es" />
-  <meta property="twitter:url" content="https://jontell.es/" />
-  <meta name="twitter:title" content="Jon Telles - Software Engineer - Portfolio" />
-  <meta
-    name="twitter:description"
-    content="Strong communicator with a knack for mobilizing teams and translating technical concepts into plain English (or terrible Spanish)."
-  />
-  <meta name="twitter:image" content="/aboutme.png" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap"
-    rel="stylesheet"
-  />
-  <script src="https://kit.fontawesome.com/cffb40c34b.js" crossorigin="anonymous"></script>
-  <script async defer data-domain="jontell.es" src="https://plausible.io/js/plausible.js"></script>
-  <link rel="manifest" href="/manifest.json" />
   <title>Jon Telles: Software Engineer 💻</title>
 </svelte:head>
 
@@ -83,77 +54,21 @@
 </main>
 
 <style lang="scss">
-  :global {
-    *,
-    *::after,
-    *::before {
-      box-sizing: border-box;
-    }
+  h2 {
+    margin: 0;
+  }
 
-    html {
-      font-size: 10px;
-      line-height: 1.5;
-      box-sizing: border-box;
-    }
+  .flex-justify-center {
+    justify-content: center;
+  }
 
-    body {
-      margin: 0;
-      font-size: 1.6rem;
-      color: whitesmoke;
-      text-align: center;
-    }
+  .margin-tb-1 {
+    margin: 1rem 0;
+  }
 
-    h2 {
-      margin: 0;
-    }
-
-    ul {
-      padding: 0;
-      list-style: none;
-    }
-
-    #svelte {
-      background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
-      background-size: cover;
-      background-repeat: no-repeat;
-    }
-
-    /* utility */
-    .flex-container {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .flex-container.vertical {
-      flex-direction: column;
-    }
-
-    .flex-evenly {
-      justify-content: space-evenly;
-    }
-
-    .flex-justify-center {
-      justify-content: center;
-    }
-
-    .margin-tb-1 {
-      margin: 1rem 0;
-    }
-
-    @keyframes icon-spin {
-      from {
-        transform: rotate(0deg);
-      }
-      to {
-        transform: rotate(360deg);
-      }
-    }
-
-    .spin-cw {
-      animation-name: icon-spin;
-      animation-duration: 1s;
-      transition: transform 0.5s ease-in-out;
+  @keyframes icon-spin {
+    to {
+      transform: rotate(360deg);
     }
   }
 

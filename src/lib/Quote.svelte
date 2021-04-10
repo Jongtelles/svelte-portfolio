@@ -2,9 +2,11 @@
   import { onMount } from "svelte";
   import { words } from "$lib/_data";
 
+  const initialQuotes = [...words];
+  const initialQuote = words[Math.floor(Math.random() * initialQuotes.length)];
   let quoteBtnPeek = false;
-  let quotes = [...words];
-  let quote = words[Math.floor(Math.random() * quotes.length)];
+  let quotes = initialQuotes;
+  let quote = initialQuote;
 
   const getQuote = () => {
     quotes = quotes.filter((item) => item !== quote);
@@ -12,8 +14,8 @@
   };
 
   const resetQuotes = () => {
-    quotes = [...words];
-    quote = quotes[Math.floor(Math.random() * quotes.length)];
+    quotes = initialQuotes;
+    quote = initialQuote;
   };
 
   onMount(() => {

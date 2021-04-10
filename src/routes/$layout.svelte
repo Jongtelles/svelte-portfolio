@@ -1,12 +1,47 @@
 <script lang="ts">
+  import { onMount } from "svelte";
   const time = new Date().getFullYear();
-  const image = "./assets/github-logo.png";
+  let canvas: HTMLCanvasElement;
+
+  onMount(() => {
+    const ctx = canvas.getContext("2d");
+    let frame;
+
+    (function loop() {
+      frame = requestAnimationFrame(loop);
+
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+      for (let p = 0; p < imageData.data.length; p += 4) {
+        const i = p / 4;
+        const x = i % canvas.width;
+        const y = (i / canvas.height) >>> 0;
+
+        const t = window.performance.now();
+
+        const r = 64 + (128 * x) / canvas.width + 64 * Math.sin(t / 1000);
+        const g = 64 + (128 * y) / canvas.height + 64 * Math.cos(t / 1400);
+        const b = 128;
+
+        imageData.data[p + 0] = r;
+        imageData.data[p + 1] = g;
+        imageData.data[p + 2] = b;
+        imageData.data[p + 3] = 255;
+      }
+
+      ctx.putImageData(imageData, 0, 0);
+    })();
+
+    return () => {
+      cancelAnimationFrame(frame);
+    };
+  });
 </script>
 
 <header class="header">
-  <span>
+  <a href="/" class="header--link">
     Jon Telles<i class="fas fa-laptop-code" />Software Engineer
-  </span>
+  </a>
   <ul class="header--links">
     <li class="header--item">
       <a
@@ -48,6 +83,9 @@
       </a>
     </li>
   </ul>
+  <a class="header--link" href="/experiments">
+    <i class="fas fa-flask" title="experiments" />Experiments
+  </a>
 </header>
 
 <slot />
@@ -57,28 +95,62 @@
     <i class="far fa-copyright" /> Jon Telles {time}
   </p>
   <p class="footer--blurb">🙃 Made by a human being 🙃</p>
-  <a
-    class="gh--link"
-    href="https://github.com/Jongtelles/svelte-portfolio"
-    style="background-image: url({image});"
-  >
-    <span>Github Link</span>
+  <a class="gh--link" href="https://github.com/Jongtelles/svelte-portfolio">
+    <span>Github link</span>
+    <div class="canvas-container"><canvas bind:this={canvas} width={32} height={32} /></div>
   </a>
 </footer>
 
 <style>
+  :global(#svelte) {
+    background: linear-gradient(#2f9395, #65b8bf, #dd517f, #8f8cf2, #a653f5);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  :global(*, *::after, *::before) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    font-size: 10px;
+    line-height: 1.5;
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    font-size: 1.6rem;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  :global(ul) {
+    padding: 0;
+    list-style: none;
+  }
+
+  /* utility */
+  :global(.flex-container) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  :global(.spin-cw) {
+    animation-name: icon-spin;
+    animation-duration: 1s;
+    transition: transform 0.5s ease-in-out;
+  }
+
   .header {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     color: #ffffff;
     border-bottom: 5px solid #ce5e82;
     position: static;
     top: 0;
-  }
-
-  .header span > i {
-    margin: 0 5px;
   }
 
   .header--links {
@@ -102,6 +174,10 @@
 
   .header--link i {
     margin-right: 0.5rem;
+  }
+
+  .header--link i:first-of-type {
+    margin: 0 0.5rem;
   }
 
   .footer {
@@ -135,6 +211,14 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  canvas {
+    width: 32px;
+    height: 32px;
+    background-color: #666;
+    -webkit-mask: url(./assets/github-logo.png) 50% 50% no-repeat;
+    mask: url(./assets/github-logo.png) 50% 50% no-repeat;
   }
 
   .gh--link span {
