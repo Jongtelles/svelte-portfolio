@@ -1,7 +1,7 @@
 Portfolio created with SvelteKit using TypeScript
 
-#SSR!
+# SSR!
 
-#It's Fast!
+# It's Fast!
 
-#It's Fun!
+# It's Fun!
