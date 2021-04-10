@@ -217,8 +217,8 @@
     width: 32px;
     height: 32px;
     background-color: #666;
-    -webkit-mask: url(./assets/github-logo.png) 50% 50% no-repeat;
-    mask: url(./assets/github-logo.png) 50% 50% no-repeat;
+    -webkit-mask: url(./github-logo.png) 50% 50% no-repeat;
+    mask: url(./github-logo.png) 50% 50% no-repeat;
   }
 
   .gh--link span {
