@@ -217,8 +217,10 @@
     width: 32px;
     height: 32px;
     background-color: #666;
-    -webkit-mask: url(./github-logo.png) 50% 50% no-repeat;
-    mask: url(./github-logo.png) 50% 50% no-repeat;
+    -webkit-mask: url(https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936399/github-logo_li4pzk.png)
+      50% 50% no-repeat;
+    mask: url(https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617936399/github-logo_li4pzk.png)
+      50% 50% no-repeat;
   }
 
   .gh--link span {
