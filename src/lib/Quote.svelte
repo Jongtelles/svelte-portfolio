@@ -5,8 +5,8 @@
   const initialQuotes = [...words];
   const initialQuote = words[Math.floor(Math.random() * initialQuotes.length)];
   let quoteBtnPeek = false;
-  let quotes = initialQuotes;
-  let quote = initialQuote;
+  let quotes;
+  let quote;
 
   const getQuote = () => {
     quotes = quotes.filter((item) => item !== quote);
@@ -15,10 +15,12 @@
 
   const resetQuotes = () => {
     quotes = initialQuotes;
-    quote = initialQuote;
+    quote = quotes[Math.floor(Math.random() * quotes.length)];
   };
 
   onMount(() => {
+    quotes = initialQuotes;
+    quote = initialQuote;
     setTimeout(() => {
       quoteBtnPeek = true;
     }, 500);
@@ -30,7 +32,9 @@
 </script>
 
 <span class="quote-container">
-  {#if quotes.length}
+  {#if !quotes}
+    <p class="quote" style="background-color: rgba(0, 0, 0, 20%);">loading...</p>
+  {:else if quotes && quotes.length}
     <q
       class="quote"
       title={quote.cite}
