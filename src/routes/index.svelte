@@ -44,13 +44,13 @@
   <Quote />
   <About />
   <h2 class="page--header">Professional Work</h2>
-  <div class="flex-container flex-justify-center margin-tb-1">
+  <section class="flex-container flex-justify-center margin-tb-1">
     <Highlight />
-  </div>
+  </section>
   <h2 class="page--header">Personal Projects</h2>
-  <div class="flex-container flex-justify-center margin-tb-1">
+  <section class="flex-container flex-justify-center margin-tb-1">
     <Project />
-  </div>
+  </section>
 </main>
 
 <style lang="scss">

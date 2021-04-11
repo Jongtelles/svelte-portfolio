@@ -40,7 +40,7 @@
 
 <h1>Experiments</h1>
 
-<div>
+<section>
   <h2>SVG Tracing</h2>
   <div class="svg-container">
     <svg
@@ -110,7 +110,7 @@
       />
     </svg>
   </div>
-</div>
+</section>
 
 <style>
   h2 {

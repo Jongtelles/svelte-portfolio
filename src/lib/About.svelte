@@ -1,3 +1,20 @@
+<script lang="ts">
+  import { onDestroy } from "svelte";
+
+  let noJq = false;
+
+  const interval = setInterval(() => {
+    noJq = true;
+    setTimeout(() => {
+      noJq = false;
+    }, 2500);
+  }, 5000);
+
+  onDestroy(() => {
+    clearInterval(interval);
+  });
+</script>
+
 <div class="about">
   <div class="flex-container" style="position: relative;">
     <img
@@ -65,7 +82,8 @@
   </div>
   <p class="about--tech-skills">
     <strong>Stack 🥞:</strong> Svelte | Vue | React | TypeScript | Node | JavaScript (ES2015+) |
-    SCSS | CSS | HTML | <span class="jq">jQuery</span>
+    SCSS | CSS | HTML |
+    <span class="jq" style={noJq ? "text-decoration: line-through; font-style: italic;" : ""}>jQuery</span>
     <br />
     <strong>Data 💾:</strong> REST | GraphQL | JSON | NoSQL | SQL
     <br />

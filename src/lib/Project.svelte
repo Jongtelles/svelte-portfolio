@@ -1,19 +1,23 @@
 <article class="project">
-  <i class="fas fa-link" />
-  <a
-    href="https://game-of-life-viz.netlify.app/"
-    target="_blank"
-    rel="noreferrer noopener"
-    class="project--link">Game of Life Visualizer</a
-  >
+  <div>
+    <i class="las la-link" />
+    <a
+      href="https://game-of-life-viz.netlify.app/"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="project--link">Game of Life Visualizer</a
+    >
+  </div>
   <br />
-  <i class="fab fa-github" />
-  <a
-    href="https://github.com/Jongtelles/game-of-life-viz"
-    target="_blank"
-    rel="noreferrer noopener"
-    class="project--link">Github Repo</a
-  >
+  <div>
+    <i class="lab la-github" />
+    <a
+      href="https://github.com/Jongtelles/game-of-life-viz"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="project--link">Github Repo</a
+    >
+  </div>
   <img
     class="project--img"
     alt="game of life vizualizer website screenshot"
@@ -26,21 +30,25 @@
   </p>
 </article>
 <article class="project">
-  <i class="fas fa-link" />
-  <a
-    href="https://dogs-r-good-4-u.netlify.app/"
-    target="_blank"
-    rel="noreferrer noopener"
-    class="project--link">Dogs R Good 4 U</a
-  >
+  <div>
+    <i class="las la-link" />
+    <a
+      href="https://dogs-r-good-4-u.netlify.app/"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="project--link">Dogs R Good 4 U</a
+    >
+  </div>
   <br />
-  <i class="fab fa-github" />
-  <a
-    href="https://github.com/Jongtelles/dogs-r-good-4-u"
-    target="_blank"
-    rel="noreferrer noopener"
-    class="project--link">Github Repo</a
-  >
+  <div>
+    <i class="lab la-github" />
+    <a
+      href="https://github.com/Jongtelles/dogs-r-good-4-u"
+      target="_blank"
+      rel="noreferrer noopener"
+      class="project--link">Github Repo</a
+    >
+  </div>
   <img
     class="project--img"
     alt="dogs r good 4 u website screenshot"
@@ -54,6 +62,12 @@
 </article>
 
 <style>
+  div {
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
+  }
+
   .project {
     flex-basis: 45%;
     background: linear-gradient(20deg, #64cff7, #8f8cf2, #ca7cd8, #ff68a8);
