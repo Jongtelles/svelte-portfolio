@@ -56,7 +56,9 @@
         rel="noopener noreferrer"
         aria-label="my resume"
       >
-        <i class="las la-file-alt" title="my resume" />{isMobile ? "" : "Resume"}
+        <i class="las la-file-alt" title="my resume" class:underline={isMobile} />{isMobile
+          ? ""
+          : "Resume"}
       </a>
     </li>
     <li class="header--item">
@@ -67,7 +69,7 @@
         rel="noopener noreferrer"
         aria-label="my linkedin account"
       >
-        <i class="lab la-linkedin-in" title="my linkedin account" />
+        <i class="lab la-linkedin-in" title="my linkedin account" class:underline={isMobile} />
         {isMobile ? "" : "LinkedIn"}
       </a>
     </li>
@@ -79,12 +81,16 @@
         rel="noopener noreferrer"
         aria-label="my github account"
       >
-        <i class="lab la-github" title="my github account" />{isMobile ? "" : "Github"}
+        <i class="lab la-github" title="my github account" class:underline={isMobile} />{isMobile
+          ? ""
+          : "Github"}
       </a>
     </li>
     <li class="header--item">
       <a class="header--link" href="mailto:jongtelles@gmail.com" aria-label="email me">
-        <i class="las la-envelope" title="email me" />{isMobile ? "" : "Email"}
+        <i class="las la-envelope" title="email me" class:underline={isMobile} />{isMobile
+          ? ""
+          : "Email"}
       </a>
     </li>
   </ul>
@@ -204,6 +210,10 @@
 
   .header--link i:first-of-type {
     margin: 0 0.5rem;
+  }
+
+  .header--link i.underline::before {
+    text-decoration: underline;
   }
 
   .footer {
