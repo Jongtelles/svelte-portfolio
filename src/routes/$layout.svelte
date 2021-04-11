@@ -267,7 +267,7 @@
       margin: 0.5rem 0;
     }
 
-    .header--link {
+    .header--link:not(:first-of-type) {
       grid-auto-flow: row;
     }
   }
