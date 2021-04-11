@@ -40,25 +40,25 @@
     <div class="about--list-container">
       <ul class="about--list">
         <li>
-          <i class="fab fa-node-js" />
+          <i class="lab la-node-js" />
           Full Stack Web Developer that loves JavaScript
         </li>
         <li>
-          <i class="far fa-comments" />
+          <i class="las la-comments" />
           Strong communicator with a knack for translating technical concepts into plain English (or
           terrible Spanish)
         </li>
         <li>
-          <i class="fas fa-rocket" />
+          <i class="las la-rocket" />
           Able to quickly implement new technologies; I live for solving complex problems and learning
           new things
         </li>
         <li>
-          <i class="fas fa-brain" />I don't know how to do everything, but I know how to find out
+          <i class="las la-brain" />I don't know how to do everything, but I know how to find out
           how to do <em>anything</em>
         </li>
         <li>
-          <i class="fas fa-coffee" />I’ll <strong>always</strong> make the coffee
+          <i class="las la-mug-hot" />I’ll <strong>always</strong> make the coffee
         </li>
       </ul>
     </div>
@@ -67,10 +67,9 @@
     <strong>Stack 🥞:</strong> Svelte | Vue | React | TypeScript | Node | JavaScript (ES2015+) |
     SCSS | CSS | HTML | <span class="jq">jQuery</span>
     <br />
-    <strong>Data 💾:</strong> JSON | GraphQL | MySQL | MongoDB | REST | APIs
+    <strong>Data 💾:</strong> REST | GraphQL | JSON | NoSQL | SQL
     <br />
-    <strong>Misc 🔀:</strong> Git | Testing (Cyprus) | Design Systems | Agile | JIRA | InVision |
-    BEM | 508 compliance
+    <strong>Misc 🔀:</strong> Git | Design Systems | Testing (Cyprus) | Agile | 508 compliance
     <br />
     <strong>Looking Into 👀:</strong> Deno | Dgraph | FaunaDB | WASM | Rust
   </p>
@@ -176,6 +175,7 @@
   }
 
   .jq::after {
+    border-radius: 12px;
     transform: scale(0.5);
     content: "";
     position: absolute;

@@ -77,7 +77,7 @@
     border-radius: 1rem;
     font-size: 1.2rem;
     padding: 0.5rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   .quote:hover + .quote--button {

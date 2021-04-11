@@ -66,12 +66,6 @@
     margin: 1rem 0;
   }
 
-  @keyframes icon-spin {
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
   :root {
     font-family: "Noto Sans JP", sans-serif;
   }

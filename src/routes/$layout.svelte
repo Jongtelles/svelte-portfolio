@@ -40,7 +40,7 @@
 
 <header class="header">
   <a href="/" class="header--link">
-    Jon Telles<i class="fas fa-laptop-code" />Software Engineer
+    Jon Telles<i class="las la-laptop-code" title="homepage" aria-hidden="true" />Software Engineer
   </a>
   <ul class="header--links">
     <li class="header--item">
@@ -51,7 +51,7 @@
         rel="noopener noreferrer"
         aria-label="my resume"
       >
-        <i class="far fa-file-alt" title="my resume" />Resume
+        <i class="las la-file-alt" title="my resume" />Resume
       </a>
     </li>
     <li class="header--item">
@@ -62,7 +62,7 @@
         rel="noopener noreferrer"
         aria-label="my linkedin account"
       >
-        <i class="fab fa-linkedin" title="my linkedin account" />
+        <i class="lab la-linkedin-in" title="my linkedin account" />
         LinkedIn
       </a>
     </li>
@@ -74,17 +74,17 @@
         rel="noopener noreferrer"
         aria-label="my github account"
       >
-        <i class="fab fa-github" title="my github account" />Github
+        <i class="lab la-github" title="my github account" />Github
       </a>
     </li>
     <li class="header--item">
       <a class="header--link" href="mailto:jongtelles@gmail.com" aria-label="email me">
-        <i class="far fa-envelope" title="email me" />Email
+        <i class="las la-envelope" title="email me" />Email
       </a>
     </li>
   </ul>
-  <a class="header--link" href="/experiments">
-    <i class="fas fa-flask" title="experiments" />Experiments
+  <a class="header--link" href="/experiments" aria-label="experiments">
+    <i class="las la-flask" title="experiments" />Experiments
   </a>
 </header>
 
@@ -92,7 +92,7 @@
 
 <footer class="footer">
   <p class="footer--copyright">
-    <i class="far fa-copyright" /> Jon Telles {time}
+    <i class="las la-copyright" /> Jon Telles {time}
   </p>
   <p class="footer--blurb">🙃 Made by a human being 🙃</p>
   <a class="gh--link" href="https://github.com/Jongtelles/svelte-portfolio">
@@ -137,10 +137,26 @@
     flex-wrap: wrap;
   }
 
+  @keyframes icon-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   :global(.spin-cw) {
     animation-name: icon-spin;
     animation-duration: 1s;
     transition: transform 0.5s ease-in-out;
+  }
+
+  :global(i) {
+    text-decoration: none;
+    font-size: 24px;
+  }
+
+  :global(i::before) {
+    display: inline-block;
+    text-decoration: none;
   }
 
   .header {
@@ -160,10 +176,14 @@
   }
 
   .header--item {
+    text-decoration: none;
     color: white;
   }
 
   .header--link {
+    display: grid;
+    place-content: center;
+    grid-auto-flow: column;
     color: white;
     padding: 0.5rem;
   }
@@ -199,6 +219,8 @@
   .footer--copyright {
     margin: 0.5rem 0 0;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
   }
 
   .footer i {
