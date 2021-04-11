@@ -259,8 +259,16 @@
       flex-direction: column;
     }
 
+    .header--item {
+      margin: 0 1rem;
+    }
+
     .header--links {
       margin: 0.5rem 0;
+    }
+
+    .header--link {
+      grid-auto-flow: row;
     }
   }
 </style>
