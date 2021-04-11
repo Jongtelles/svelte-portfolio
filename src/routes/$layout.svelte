@@ -2,6 +2,9 @@
   import { onMount } from "svelte";
   const time = new Date().getFullYear();
   let canvas: HTMLCanvasElement;
+  let x: number;
+
+  $: isMobile = x <= 500 ? true : false;
 
   onMount(() => {
     const ctx = canvas.getContext("2d");
@@ -38,6 +41,8 @@
   });
 </script>
 
+<svelte:window bind:innerWidth={x} />
+
 <header class="header">
   <a href="/" class="header--link">
     Jon Telles<i class="las la-laptop-code" title="homepage" aria-hidden="true" />Software Engineer
@@ -51,7 +56,7 @@
         rel="noopener noreferrer"
         aria-label="my resume"
       >
-        <i class="las la-file-alt" title="my resume" />Resume
+        <i class="las la-file-alt" title="my resume" />{isMobile ? "" : "Resume"}
       </a>
     </li>
     <li class="header--item">
@@ -63,7 +68,7 @@
         aria-label="my linkedin account"
       >
         <i class="lab la-linkedin-in" title="my linkedin account" />
-        LinkedIn
+        {isMobile ? "" : "LinkedIn"}
       </a>
     </li>
     <li class="header--item">
@@ -74,12 +79,12 @@
         rel="noopener noreferrer"
         aria-label="my github account"
       >
-        <i class="lab la-github" title="my github account" />Github
+        <i class="lab la-github" title="my github account" />{isMobile ? "" : "Github"}
       </a>
     </li>
     <li class="header--item">
       <a class="header--link" href="mailto:jongtelles@gmail.com" aria-label="email me">
-        <i class="las la-envelope" title="email me" />Email
+        <i class="las la-envelope" title="email me" />{isMobile ? "" : "Email"}
       </a>
     </li>
   </ul>
@@ -267,7 +272,11 @@
       margin: 0.5rem 0;
     }
 
-    .header--link:not(:first-of-type) {
+    .header--link {
+      grid-auto-flow: column;
+    }
+
+    li .header--link {
       grid-auto-flow: row;
     }
   }
