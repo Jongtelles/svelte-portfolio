@@ -166,6 +166,7 @@
 
   .header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 0.5rem 1rem;
     color: #ffffff;
@@ -261,15 +262,16 @@
 
   @media (max-width: 500px) {
     .header {
-      flex-direction: column;
+      justify-content: center;
+      padding: 5px;
     }
 
     .header--item {
-      margin: 0 1rem;
+      margin: 0;
     }
 
     .header--links {
-      margin: 0.5rem 0;
+      margin: 0;
     }
 
     .header--link {
