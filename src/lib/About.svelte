@@ -184,9 +184,12 @@
     height: 315px;
     width: 270px;
     display: block;
+    transition: all 0.3s ease-in-out;
+    display: none;
   }
 
   .jq:hover::after {
+    display: block;
     background: url(https://res.cloudinary.com/ushigoroshi/image/upload/f_auto,q_auto/v1617946626/giphy_ntucn5.webp);
   }
 
