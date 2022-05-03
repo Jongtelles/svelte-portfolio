@@ -51,7 +51,7 @@
     <li class="header--item">
       <a
         class="header--link"
-        href="https://drive.google.com/file/d/1VnTYC66Y8r_pYYQjSIlAy2Bkaw-uZ91B/view?usp=sharing"
+        href="https://drive.google.com/file/d/1PvdB6xHO2EkjIoeJBd6q5WUKJ8S6m3B6/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="my resume"
